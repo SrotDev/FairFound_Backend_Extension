@@ -1,0 +1,42 @@
+### FairFound Extension API Endpoints
+
+### Get Available Categories
+GET http://localhost:8000/api/leaderboard/categories/
+Content-Type: application/json
+
+### Get Marketplace Leaderboard (All)
+GET http://localhost:8000/api/leaderboard/marketplace/
+Content-Type: application/json
+
+### Get Marketplace Leaderboard (Filtered by Category)
+GET http://localhost:8000/api/leaderboard/marketplace/?category=Mobile Developer
+Content-Type: application/json
+
+### Get FairFound Leaderboard (All)
+GET http://localhost:8000/api/leaderboard/fairfound/
+Content-Type: application/json
+
+### Get FairFound Leaderboard (Filtered by Category)
+GET http://localhost:8000/api/leaderboard/fairfound/?category=UI/UX Designer
+Content-Type: application/json
+
+### Compare Two Freelancers
+POST http://localhost:8000/api/compare/
+Content-Type: application/json
+
+{
+    "url1": "https://fairfound.com/freelancer/sarah-johnson",
+    "url2": "https://fairfound.com/freelancer/michael-chen"
+}
+
+### List All Freelancers
+GET http://localhost:8000/api/leaderboard/
+Content-Type: application/json
+
+### Search Freelancer Profiles (for comparison picker)
+GET http://localhost:8000/api/leaderboard/profiles/?search=sarah
+Content-Type: application/json
+
+### Get All Profiles (first 50)
+GET http://localhost:8000/api/leaderboard/profiles/
+Content-Type: application/json
